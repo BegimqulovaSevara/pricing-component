@@ -20,8 +20,8 @@
             <h1 class="site-title">Our Pricing</h1>
             <form class="pricing-switch" action="hhtps://echo.htmlacademy.ru" method="GET">
                 <div class="switch">
-                    <input class="switch-input-annualy visuallyhidden" type="radio" name="payment-period" value="annual" id="annualy-payment-period">
-                    <input class="switch-input-monthly visuallyhidden" type="radio" name="payment-period" value="monthly" id="monthly-payment-period">
+                    <input class="switch-input-annualy visuallyhidden" type="radio" name="payment_period" value="annual" id="annualy-payment-period">
+                    <input class="switch-input-monthly visuallyhidden" type="radio" name="payment_period" value="monthly" id="monthly-payment-period" checked>
                     <label class="switch-label" for="annualy-payment-period">Anually</label>
                     <div class="switch-control">
                         <div class="switch-circle"></div>
@@ -36,11 +36,11 @@
                     Pricing
                 </h2>
                 <div class="pricing-inner">
-                    <section class="pricing-plan">
+                    <section class="pricing-plan" data-payment-annual="199.99" data-payment-monthly="19.99">
                         <h3 class="pricing-plan-title">Basic</h3>
                         <div class="pricing-plan-price">
                             <span class="pricing-plan-price-currensy">$</span>
-                            19.99
+                            <span class="pricing-plan-value">19.99</span>
                         </div>
                         <ul class="pricing-plan-list">
                             <li class="pricing-plan-list-item">500 GB Storage</li>
@@ -50,11 +50,11 @@
                         <a class="button button-block button-primary" href="#">Learn more</a>
                     </section>
 
-                    <section class="pricing-plan pricing-plan-best">
+                    <section class="pricing-plan pricing-plan-best" data-payment-annual="249.99" data-payment-monthly="24.99">
                         <h3 class="pricing-plan-title">Professional</h3>
                         <div class="pricing-plan-price">
                             <span class="pricing-plan-price-currensy">$</span>
-                            24.99
+                            <span class="pricing-plan-value">24.99</span>
                         </div>
                         <ul class="pricing-plan-list white-border">
                             <li class="pricing-plan-list-item">1 TB Storage</li>
@@ -64,11 +64,11 @@
                         <a class="button button-block button-white" href="#">Learn more</a>
                     </section>
 
-                    <section class="pricing-plan">
+                    <section class="pricing-plan" data-payment-annual="399.99" data-payment-monthly="39.99">
                         <h3 class="pricing-plan-title">Master</h3>
                         <div class="pricing-plan-price">
                             <span class="pricing-plan-price-currensy">$</span>
-                            39.99
+                            <span class="pricing-plan-value">39.99</span>
                         </div>
                         <ul class="pricing-plan-list">
                             <li class="pricing-plan-list-item">2 TB Storage</li>
