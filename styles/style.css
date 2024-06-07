@@ -113,8 +113,61 @@ img {
   margin-top: 0;
   margin-bottom: 40px;
 }
-.margin-bottom{
+.pricing-switch{
   margin-bottom: 64px;
+}
+.switch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch-label{
+  font-size: 15px;
+  line-height: 28px;
+  color: rgba(109, 114, 222, 0.5);
+  cursor: pointer;
+}
+.switch-control{
+  width: 56px;
+  height: 32px;
+  padding: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+  position: relative;
+  border-radius: 16px;
+  background-color: #6D72DE;
+}
+.switch-circle{
+  width: 24px;
+  height: 24px;
+  border-radius:50%;
+  background-color: #fff;
+  transition: margin 0.2s ease;
+}
+.switch-control-annualy,
+.switch-control-monthly{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.switch-label:hover{
+  color: #6D72DE;
+}
+.switch-control-annualy:checked ~ .switch-control .switch-control-monthly{
+  transform: translateY(-10px);
+}
+.switch-control-monthly:checked ~ .switch-control .switch-control-annualy{
+  transform: translateY(-10px);
+}
+.switch-input-annualy:checked ~ .switch-control .switch-control-monthly,
+.switch-input-monthly:checked ~ .switch-control .switch-control-annualy{
+  z-index: 5;
+}
+.switch-input-monthly:checked ~ .switch-control .switch-circle{
+  margin-left: 24px;
 }
 .pricing {
   width: 100%;
@@ -168,7 +221,13 @@ img {
   list-style: none;
   border-top: 1px solid rgba(110, 114, 142, 0.25);
 }
+.pricing-plan-best .pricing-plan-list{
+  border-top: 1px solid rgba(239, 239, 239, 0.25);
+}
 .pricing-plan-list-item {
   padding: 12px;
   border-bottom: 1px solid rgba(110, 114, 142, 0.25);
+}
+.pricing-plan-best .pricing-plan-list-item{
+  border-bottom: 1px solid rgba(239, 239, 239, 0.25);
 }

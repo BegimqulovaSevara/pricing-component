@@ -18,7 +18,19 @@
     <main class="main-content">
         <div class="page container">
             <h1 class="site-title">Our Pricing</h1>
-            <div class="margin-bottom">Switch</div>
+            <form class="pricing-switch" action="hhtps://echo.htmlacademy.ru" method="GET">
+                <div class="switch">
+                    <input class="switch-input-annualy visuallyhidden" type="radio" name="payment-period" value="annual" id="annualy-payment-period">
+                    <input class="switch-input-monthly visuallyhidden" type="radio" name="payment-period" value="monthly" id="monthly-payment-period">
+                    <label class="switch-label" for="annualy-payment-period">Anually</label>
+                    <div class="switch-control">
+                        <div class="switch-circle"></div>
+                        <label class="switch-control-annualy" for="annualy-payment-period"></label>
+                        <label class="switch-control-monthly" for="monthly-payment-period"></label>
+                    </div>
+                    <label class="switch-label" for="monthly-payment-period">Monthly</label>
+                </div>
+            </form>
             <section class="pricing">
                 <h2 class="visuallyhidden">
                     Pricing
@@ -44,7 +56,7 @@
                             <span class="pricing-plan-price-currensy">$</span>
                             24.99
                         </div>
-                        <ul class="pricing-plan-list">
+                        <ul class="pricing-plan-list white-border">
                             <li class="pricing-plan-list-item">1 TB Storage</li>
                             <li class="pricing-plan-list-item">5 Users Allowed</li>
                             <li class="pricing-plan-list-item">Send up to 10 GB</li>
